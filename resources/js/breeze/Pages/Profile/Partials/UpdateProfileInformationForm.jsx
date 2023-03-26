@@ -1,7 +1,7 @@
-import InputError from '@/Components/InputError';
-import InputLabel from '@/Components/InputLabel';
-import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
+import InputError from '@/breeze/Components/InputError';
+import InputLabel from '@/breeze/Components/InputLabel';
+import PrimaryButton from '@/breeze/Components/PrimaryButton';
+import TextInput from '@/breeze/Components/TextInput';
 import { Link, useForm, usePage } from '@inertiajs/react';
 import { Transition } from '@headlessui/react';
 
