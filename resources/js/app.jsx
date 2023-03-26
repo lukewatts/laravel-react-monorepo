@@ -1,16 +1,16 @@
 import './bootstrap';
 import '../css/app.css';
-
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 
-const theme = "breeze";
+const theme = "thistle";
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
-    resolve: (name) => resolvePageComponent(`./${theme}/Pages/${name}.jsx`, import.meta.glob('./breeze/Pages/**/*.jsx')),
+    resolve: (name) => resolvePageComponent(`./${theme}/Pages/${name}.jsx`, import.meta.glob('./thistle/Pages/**/*.jsx')),
     setup({ el, App, props }) {
         const root = createRoot(el);
 
