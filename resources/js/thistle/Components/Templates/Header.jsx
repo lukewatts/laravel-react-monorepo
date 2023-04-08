@@ -28,10 +28,10 @@ import {
     IconCoin,
     IconChevronDown,
 } from '@tabler/icons-react';
-import Logo from "@/thistle/Components/Atoms/Logo";
-import Auth, {LoginLink} from "@/thistle/Components/Templates/Auth";
+import Logo from '@/thistle/Components/Atoms/Logo';
+import Auth, { LoginLink } from '@/thistle/Components/Templates/Auth';
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(theme => ({
     link: {
         display: 'flex',
         alignItems: 'center',
@@ -73,9 +73,7 @@ const useStyles = createStyles((theme) => ({
         marginTop: theme.spacing.sm,
         padding: `${theme.spacing.md} calc(${theme.spacing.md} * 2)`,
         paddingBottom: theme.spacing.xl,
-        borderTop: `${rem(1)} solid ${
-            theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-        }`,
+        borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]}`,
     },
 
     hiddenMobile: {
@@ -129,7 +127,7 @@ export function HeaderMegaMenu() {
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
     const { classes, theme } = useStyles();
 
-    const links = mockdata.map((item) => (
+    const links = mockdata.map(item => (
         <UnstyledButton className={classes.subLink} key={item.title}>
             <Group noWrap align="flex-start">
                 <ThemeIcon size={34} variant="default" radius="md">
@@ -176,11 +174,7 @@ export function HeaderMegaMenu() {
                                     </Anchor>
                                 </Group>
 
-                                <Divider
-                                    my="sm"
-                                    mx="-md"
-                                    color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'}
-                                />
+                                <Divider my="sm" mx="-md" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
                                 <SimpleGrid cols={2} spacing={0}>
                                     {links}

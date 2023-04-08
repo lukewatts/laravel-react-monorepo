@@ -50,7 +50,7 @@ export function Feature({ icon: Icon, title, description }) {
     );
 }
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(theme => ({
     wrapper: {
         paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     },
@@ -75,7 +75,6 @@ const useStyles = createStyles((theme) => ({
         },
     },
 }));
-
 
 export function FeaturesGrid({ title, description, data = MOCKDATA }) {
     const { classes } = useStyles();
@@ -104,4 +103,4 @@ export function FeaturesGrid({ title, description, data = MOCKDATA }) {
             </SimpleGrid>
         </Container>
     );
-};
+}

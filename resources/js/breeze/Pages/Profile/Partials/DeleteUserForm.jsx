@@ -26,7 +26,7 @@ export default function DeleteUserForm({ className = '' }) {
         setConfirmingUserDeletion(true);
     };
 
-    const deleteUser = (e) => {
+    const deleteUser = e => {
         e.preventDefault();
 
         destroy(route('profile.destroy'), {
@@ -58,9 +58,7 @@ export default function DeleteUserForm({ className = '' }) {
 
             <Modal show={confirmingUserDeletion} onClose={closeModal}>
                 <form onSubmit={deleteUser} className="p-6">
-                    <h2 className="text-lg font-medium text-gray-900">
-                        Are you sure you want to delete your account?
-                    </h2>
+                    <h2 className="text-lg font-medium text-gray-900">Are you sure you want to delete your account?</h2>
 
                     <p className="mt-1 text-sm text-gray-600">
                         Once your account is deleted, all of its resources and data will be permanently deleted. Please
@@ -76,7 +74,7 @@ export default function DeleteUserForm({ className = '' }) {
                             name="password"
                             ref={passwordInput}
                             value={data.password}
-                            onChange={(e) => setData('password', e.target.value)}
+                            onChange={e => setData('password', e.target.value)}
                             className="mt-1 block w-3/4"
                             isFocused
                             placeholder="Password"

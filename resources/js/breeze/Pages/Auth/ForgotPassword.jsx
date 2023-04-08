@@ -9,7 +9,7 @@ export default function ForgotPassword({ status }) {
         email: '',
     });
 
-    const submit = (e) => {
+    const submit = e => {
         e.preventDefault();
 
         post(route('password.email'));
@@ -34,7 +34,7 @@ export default function ForgotPassword({ status }) {
                     value={data.email}
                     className="mt-1 block w-full"
                     isFocused={true}
-                    onChange={(e) => setData('email', e.target.value)}
+                    onChange={e => setData('email', e.target.value)}
                 />
 
                 <InputError message={errors.email} className="mt-2" />

@@ -17,7 +17,7 @@ export default function ConfirmPassword() {
         };
     }, []);
 
-    const submit = (e) => {
+    const submit = e => {
         e.preventDefault();
 
         post(route('password.confirm'));
@@ -42,7 +42,7 @@ export default function ConfirmPassword() {
                         value={data.password}
                         className="mt-1 block w-full"
                         isFocused={true}
-                        onChange={(e) => setData('password', e.target.value)}
+                        onChange={e => setData('password', e.target.value)}
                     />
 
                     <InputError message={errors.password} className="mt-2" />

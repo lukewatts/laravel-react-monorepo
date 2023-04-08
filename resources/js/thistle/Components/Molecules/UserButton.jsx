@@ -1,13 +1,7 @@
-import {
-    UnstyledButton,
-    Group,
-    Avatar,
-    Text,
-    createStyles,
-} from '@mantine/core';
+import { UnstyledButton, Group, Avatar, Text, createStyles } from '@mantine/core';
 import { IconChevronRight } from '@tabler/icons-react';
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(theme => ({
     user: {
         display: 'block',
         width: '100%',

@@ -1,18 +1,7 @@
-import {
-    createStyles,
-    Image,
-    Container,
-    Title,
-    Button,
-    Group,
-    Text,
-    List,
-    ThemeIcon,
-    rem,
-} from '@mantine/core';
+import { createStyles, Image, Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles(theme => ({
     outer: {
         borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]}`,
     },
@@ -78,8 +67,8 @@ export function HeroBullets() {
                             A <span className={classes.highlight}>modern</span> React <br /> components library
                         </Title>
                         <Text color="dimmed" mt="md">
-                            Build fully functional accessible web applications faster than ever – Mantine includes
-                            more than 120 customizable components and hooks to cover you in any situation
+                            Build fully functional accessible web applications faster than ever – Mantine includes more
+                            than 120 customizable components and hooks to cover you in any situation
                         </Text>
 
                         <List
@@ -93,12 +82,12 @@ export function HeroBullets() {
                             }
                         >
                             <List.Item>
-                                <b>TypeScript based</b> – build type safe applications, all components and hooks
-                                export types
+                                <b>TypeScript based</b> – build type safe applications, all components and hooks export
+                                types
                             </List.Item>
                             <List.Item>
-                                <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-                                any project
+                                <b>Free and open source</b> – all packages have MIT license, you can use Mantine in any
+                                project
                             </List.Item>
                             <List.Item>
                                 <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
@@ -115,10 +104,12 @@ export function HeroBullets() {
                             </Button>
                         </Group>
                     </div>
-                    <Image src={"https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg"} className={classes.image} />
+                    <Image
+                        src={'https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg'}
+                        className={classes.image}
+                    />
                 </div>
             </Container>
         </div>
     );
 }
-

@@ -1,5 +1,5 @@
-import routeTo from 'flarum/core/router/routeTo';
+import routeTo from './routeTo';
 
 export default {
-    routeTo
+    routeTo,
 };
