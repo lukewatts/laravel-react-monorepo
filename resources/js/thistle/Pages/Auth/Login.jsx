@@ -20,12 +20,14 @@ export function AuthenticationTitle() {
     return (
         <Container size={420} my={40}>
             <CloseButton
+                title="Close login and go back to home page"
+                aria-label="Close login and go back to home page"
+                size="lg"
                 onClick={() => {
                     router.visit(route('home'));
                 }}
-            >
-                X
-            </CloseButton>
+                sx={{ position: 'absolute', top: 20, right: 20 }}
+            />
             <Title align="center" sx={theme => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, fontWeight: 900 })}>
                 Welcome back!
             </Title>
