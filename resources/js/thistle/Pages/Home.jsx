@@ -3,7 +3,7 @@ import { FeaturesGrid } from "@/thistle/Components/Templates/Features";
 import {Container, Title} from "@mantine/core";
 import {FooterLinks} from "@/thistle/Components/Templates/Footer";
 import {HeaderMegaMenu} from "@/thistle/Components/Templates/Header";
-import AuthContext from "@/thistle/Contexts/AuthContext";
+import AuthContext from "@/app/Contexts/AuthContext";
 
 const mockData = {
     footer: [{

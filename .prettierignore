@@ -1,0 +1,13 @@
+.prettierrc.json
+composer.json
+composer.lock
+jsconfig.json
+package.json
+package-json.lock
+postcss.config.js
+README.md
+tailwind.config.js
+vite.config.js
+yarn.lock
+public/build/*
+vendor/*
