@@ -9,5 +9,5 @@ README.md
 tailwind.config.js
 vite.config.js
 yarn.lock
-public/build/*
+public/**/*
 vendor/*
