@@ -1,5 +1,5 @@
 import AuthContext from '@/app/Contexts/AuthContext';
-import { router } from '@inertiajs/core';
+import routeTo from '@/app/core/router/routeTo';
 import {
     TextInput,
     PasswordInput,
@@ -24,7 +24,7 @@ export function AuthenticationTitle() {
                 aria-label="Close login and go back to home page"
                 size="lg"
                 onClick={() => {
-                    router.visit(route('home'));
+                    routeTo(route('home'));
                 }}
                 sx={{ position: 'absolute', top: 20, right: 20 }}
             />
