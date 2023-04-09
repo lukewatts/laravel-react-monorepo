@@ -24,7 +24,7 @@ export function AuthenticationTitle() {
                 aria-label="Close login and go back to home page"
                 size="lg"
                 onClick={() => {
-                    routeTo(route('home'));
+                    routeTo('home');
                 }}
                 sx={{ position: 'absolute', top: 20, right: 20 }}
             />
